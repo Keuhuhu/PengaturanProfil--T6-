@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/layoutUtama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF">
+
+        <!-- LATIHAN 3: Penghitung Buka Aplikasi -->
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kamu sudah membuka aplikasi ini 0 kali"
+            android:textColor="#D93025"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- KARTU PROFIL -->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnGantiAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti Avatar"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvNamaKartu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Belum Diisi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1B1B1B"/>
+
+        <TextView
+            android:id="@+id/tvEmailKartu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@belum.diisi"
+            android:textColor="#6B6B6B"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- FORM INPUT -->
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bio Singkat"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- LATIHAN 2: Input Kota -->
+        <EditText
+            android:id="@+id/etKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kota Asal"
+            android:inputType="text"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- PENGATURAN -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swGelap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mode Gelap"
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- TOMBOL AKSI -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Profil"
+            android:backgroundTint="#3DDC84"
+            android:textColor="#16213E"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Data"
+            android:backgroundTint="#D93025"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
